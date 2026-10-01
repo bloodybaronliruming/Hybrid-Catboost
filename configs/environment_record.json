@@ -1,0 +1,22 @@
+{
+  "python": "3.11.16",
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "catboost": "1.2.10",
+    "rdkit": "2023.9.6",
+    "torch": "2.14.0+cu130",
+    "chemprop": "2.2.1",
+    "lightning": "2.6.6",
+    "PyTDC": "1.1.15",
+    "matplotlib": "3.10.9",
+    "Pillow": "12.3.0"
+  },
+  "install_validation": "NOT_YET_TESTED_IN_A_FRESH_ENVIRONMENT",
+  "original_gpu": "NVIDIA GeForce RTX 3060",
+  "peak_vram_recorded": false
+}

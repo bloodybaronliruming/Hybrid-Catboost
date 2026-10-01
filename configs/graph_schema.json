@@ -1,0 +1,131 @@
+{
+  "atom_featurizer": "MultiHotAtomFeaturizer.v2",
+  "atom_width": 72,
+  "atom_categories": {
+    "atomic_nums": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      53
+    ],
+    "degrees": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "formal_charges": [
+      -1,
+      -2,
+      1,
+      2,
+      0
+    ],
+    "chiral_tags": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "num_Hs": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "hybridizations": [
+      "S",
+      "SP",
+      "SP2",
+      "SP2D",
+      "SP3",
+      "SP3D",
+      "SP3D2"
+    ]
+  },
+  "atom_additional": [
+    "aromaticity",
+    "atomic mass / 100"
+  ],
+  "unknown_categories": "one extra bin per atom category",
+  "bond_featurizer": "MultiHotBondFeaturizer",
+  "bond_width": 14,
+  "bond_types": [
+    "SINGLE",
+    "DOUBLE",
+    "TRIPLE",
+    "AROMATIC"
+  ],
+  "bond_stereo": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "bond_additional": [
+    "null bond",
+    "conjugated",
+    "in ring"
+  ],
+  "edge_order": "original RDKit bonds; begin->end then end->begin; reverse paired",
+  "structure": {
+    "input": "original Drug SMILES",
+    "keep_h": false,
+    "add_h": false,
+    "ignore_stereo": false,
+    "reorder_atoms": false,
+    "salt_removal": false,
+    "neutralization": false,
+    "tautomer_canonicalization": false,
+    "dimension": "2D"
+  },
+  "no_input_self_loops": true,
+  "extra_descriptors": false,
+  "pretrained": false,
+  "label_independent": true,
+  "failure": "raise on invalid/empty molecules; no row deletion or zero fallback",
+  "stored_dtypes": {
+    "V": "float32",
+    "E": "float32",
+    "edge_index": "int64",
+    "rev_edge_index": "int64"
+  }
+}

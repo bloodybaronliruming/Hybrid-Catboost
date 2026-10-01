@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.DS_Store
+*.cbm
+*.joblib
+*.pkl
+*.npy
+*.npz
+chemrxiv_submission/reproducibility/runs/
+chemrxiv_submission/reproducibility/inputs/features/
+chemrxiv_submission/reproducibility/inputs/models/
+chemrxiv_submission/reproducibility/inputs/processors/
+chemrxiv_submission/reproducibility/inputs/states/
+chemrxiv_submission/reproducibility/inputs/train/
+chemrxiv_submission/reproducibility/inputs/members/
+chemrxiv_submission/reproducibility/inputs/predictions/
+chemrxiv_submission/reproducibility/inputs/original_*/
+chemrxiv_submission/reproducibility/inputs/test.csv
+examples/*.npz
+
+# Newly generated data, weights, logs, plots and caches stay local.
+/data/
+/generated/
+.pytest_cache/

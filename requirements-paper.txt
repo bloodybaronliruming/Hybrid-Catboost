@@ -1,0 +1,5 @@
+-r requirements.txt
+# CUDA 13.0 Torch wheel availability and clean installation must be checked on the target host.
+torch==2.14.0+cu130
+chemprop==2.2.1
+lightning==2.6.6

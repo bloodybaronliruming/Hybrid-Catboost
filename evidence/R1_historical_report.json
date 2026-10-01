@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "level": "R1",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "checks": 35,
+  "per_seed": [
+    {
+      "seed": 1,
+      "rows": 1997,
+      "metrics": {
+        "MAE": 0.7764657358944539,
+        "RMSE": 1.0659710771165287,
+        "R2": 0.7841959769482807,
+        "Spearman": 0.8724383993658893
+      }
+    },
+    {
+      "seed": 2,
+      "rows": 1997,
+      "metrics": {
+        "MAE": 0.7485010950945417,
+        "RMSE": 1.0328774492379678,
+        "R2": 0.7973874765941018,
+        "Spearman": 0.8771999927947954
+      }
+    },
+    {
+      "seed": 3,
+      "rows": 1997,
+      "metrics": {
+        "MAE": 0.7494029446521521,
+        "RMSE": 1.0312667276162364,
+        "R2": 0.7980189124092238,
+        "Spearman": 0.8785749146775171
+      }
+    },
+    {
+      "seed": 4,
+      "rows": 1997,
+      "metrics": {
+        "MAE": 0.7351755760293464,
+        "RMSE": 1.0269955316501018,
+        "R2": 0.799688537269865,
+        "Spearman": 0.8781164863393286
+      }
+    },
+    {
+      "seed": 5,
+      "rows": 1997,
+      "metrics": {
+        "MAE": 0.7386111070376918,
+        "RMSE": 1.0459450216852917,
+        "R2": 0.7922282926373406,
+        "Spearman": 0.8706808638415457
+      }
+    }
+  ],
+  "summary": {
+    "MAE": {
+      "mean": 0.7496312917416371,
+      "sample_sd": 0.01621595716808496,
+      "population_sd": 0.01450399301922518
+    },
+    "RMSE": {
+      "mean": 1.0406111614612252,
+      "sample_sd": 0.01584368573535742,
+      "population_sd": 0.014171023327361174
+    },
+    "R2": {
+      "mean": 0.7943038391717623,
+      "sample_sd": 0.006300443132536449,
+      "population_sd": 0.005635287653089287
+    },
+    "Spearman": {
+      "mean": 0.8754021314038154,
+      "sample_sd": 0.003596548935652491,
+      "population_sd": 0.003216851161809395
+    }
+  },
+  "native_TDC_rounded_summary": [
+    0.75,
+    0.014
+  ],
+  "contract": "chemrxiv_submission/reproducibility/contract.json",
+  "input_manifest": "chemrxiv_submission/reproducibility/inputs/manifest.json"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "status": "PASS_SOURCE_PACKAGE_PREPARATION",
+  "current_scope": "source files for others to reproduce; full experimental reconstruction deferred by author",
+  "public_repository_verified": false,
+  "full_public_GPU_rebuild_verified": false,
+  "fresh_environment_install_verified": false,
+  "full_raw_feature_rebuild_verified": false,
+  "formal_validation_fits_executed_for_public_pipeline": 0,
+  "formal_final_fits_executed_for_public_pipeline": 0,
+  "observed_checks": [
+    {
+      "check": "Isolated offline acquisition from official cache",
+      "result": "PASS; both original file hashes and row counts matched"
+    },
+    {
+      "check": "Five official splits",
+      "result": "PASS; all memberships and ten CSV byte hashes matched"
+    },
+    {
+      "check": "Raw features of 64 training rows recalculated",
+      "result": "PASS; binary Morgan and RDKit2D arrays exactly matched, including NaNs"
+    },
+    {
+      "check": "Five processors refitted from frozen raw descriptor arrays",
+      "result": "PASS; all five resulting primary training-matrix hashes matched; this was not a full raw feature rebuild"
+    },
+    {
+      "check": "11 portable unit checks",
+      "result": "PASS before final packaging refinements; core invariants, data-read denial, native graph encoding and synthetic CPU fit/reload/predict; later source-only changes were syntax-checked"
+    },
+    {
+      "check": "Private historical-weight replay through public inference/evaluation/serving",
+      "result": "PASS; all five original metrics matched strict tolerances; no new GPU fit performed"
+    },
+    {
+      "check": "Primary report integration on private replay fixture",
+      "result": "PASS; not a new trained-model experiment"
+    },
+    {
+      "check": "Paper figure renderer on historical local fixtures",
+      "result": "PASS; six figures in PDF/SVG/PNG; visual review still applies"
+    },
+    {
+      "check": "Structural audit",
+      "result": "PASS; 60 zero-overlap comparisons and historical empty-scaffold counts matched"
+    }
+  ],
+  "checks_do_not_establish": [
+    "fresh environment installation",
+    "full new raw-feature rebuilding",
+    "465-candidate validation search execution",
+    "50 new final fits",
+    "public GitHub access",
+    "new external or PBPK validation"
+  ],
+  "validation_units": "synthetic diagnostics and private historical replay only; temporary QA data/models are excluded from this package",
+  "future_checks_provided": "tests and complete stage commands are included; their execution is optional for the current author-requested source-only preparation"
+}

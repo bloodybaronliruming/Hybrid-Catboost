@@ -1,0 +1,17 @@
+{
+  "graph_source_sha256": "2e476e936cfe24514ab88eabac6af7574b3dbe7485958f2febaa7faef124bd85",
+  "fixed_epoch_source_sha256": "0fc9ab2119a0d273ec73070a4d13c236fde17b8e11320584db26cf5256c12222",
+  "graph_definition_extraction": [
+    "GraphRows",
+    "collate",
+    "compare_graph",
+    "fit",
+    "graph",
+    "independent_graph",
+    "loader",
+    "model",
+    "predict",
+    "setup"
+  ],
+  "notes": "Native numerical functions extracted; internal workspace gates and graph cache interfaces omitted. Package-local IO imports replaced; graph.loader replaced with loader in fixed-epoch fit."
+}

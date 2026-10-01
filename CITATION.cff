@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the fixed repository version used in your work. The ChemRxiv manuscript DOI will be added after publication."
+title: "Hybrid-CatBoost: reproducible aqueous-solubility benchmark code"
+type: software
+authors:
+  - family-names: Li
+    given-names: Ruming
+    affiliation: Beijing University of Chemical Technology
+    orcid: "https://orcid.org/0009-0004-0499-429X"
+license: MIT

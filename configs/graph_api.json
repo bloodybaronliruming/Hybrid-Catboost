@@ -1,0 +1,31 @@
+{
+  "packages": {
+    "chemprop": "2.2.1",
+    "torch": "2.14.0+cu130",
+    "lightning": "2.6.6",
+    "rdkit": "2023.9.6",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3"
+  },
+  "signatures": {
+    "_MoleculeDatapointMixin.from_smi": "(smi: 'str', *args, keep_h: 'bool' = False, add_h: 'bool' = False, ignore_stereo: 'bool' = False, reorder_atoms: 'bool' = False, **kwargs) -> '_MoleculeDatapointMixin'",
+    "MolGraph": "(V: numpy.ndarray, E: numpy.ndarray, edge_index: numpy.ndarray, rev_edge_index: numpy.ndarray)",
+    "Datum": "(mg: chemprop.data.molgraph.MolGraph, V_d: numpy.ndarray | None, x_d: numpy.ndarray | None, y: numpy.ndarray | None, weight: float, lt_mask: numpy.ndarray | None, gt_mask: numpy.ndarray | None)",
+    "collate_batch": "(batch: Iterable[chemprop.data.datasets.Datum]) -> chemprop.data.collate.TrainingBatch",
+    "SimpleMoleculeMolGraphFeaturizer": "(atom_featurizer: chemprop.featurizers.base.VectorFeaturizer[rdkit.Chem.rdchem.Atom] = <factory>, bond_featurizer: chemprop.featurizers.base.VectorFeaturizer[rdkit.Chem.rdchem.Bond] = <factory>, extra_atom_fdim: int = 0, extra_bond_fdim: int = 0) -> None",
+    "BondMessagePassing": "(d_v: int = 72, d_e: int = 14, d_h: int = 300, bias: bool = False, depth: int = 3, dropout: float = 0.0, activation: str | torch.nn.modules.module.Module | chemprop.nn.utils.Activation = <Activation.RELU: 'relu'>, undirected: bool = False, d_vd: int | None = None, V_d_transform: chemprop.nn.transforms.ScaleTransform | None = None, graph_transform: chemprop.nn.transforms.GraphTransform | None = None)",
+    "MeanAggregation": "(dim: int = 0, *args, **kwargs)",
+    "RegressionFFN": "(n_tasks: int = 1, input_dim: int = 300, hidden_dim: int = 300, n_layers: int = 1, dropout: float = 0.0, activation: str | torch.nn.modules.module.Module = 'relu', criterion: chemprop.nn.metrics.ChempropMetric | None = None, task_weights: torch.Tensor | None = None, threshold: float | None = None, output_transform: chemprop.nn.transforms.UnscaleTransform | None = None)",
+    "MPNN": "(message_passing: 'MessagePassing', agg: 'Aggregation', predictor: 'Predictor', batch_norm: 'bool' = False, metrics: 'Iterable[ChempropMetric] | None' = None, warmup_epochs: 'int' = 2, init_lr: 'float' = 0.0001, max_lr: 'float' = 0.001, final_lr: 'float' = 0.0001, X_d_transform: 'ScaleTransform | None' = None)",
+    "MPNN.forward": "(self, bmg: 'BatchMolGraph', V_d: 'Tensor | None' = None, X_d: 'Tensor | None' = None) -> 'Tensor'"
+  },
+  "installed_source_sha256": {
+    "chemprop/featurizers/atom.py": "a3ed3830ef7397d67cd3ac87cad1da8245c9d627c4c3f1a858e3082e2ad6b653",
+    "chemprop/featurizers/bond.py": "12d0d6ffe14643dc703f578f353a9ab6336b3e543e0cacc43ae30761ee31504a",
+    "chemprop/featurizers/molgraph/molecule.py": "5a484afe5bce46165c5005a0a0f828f4feb5be277ba0f8ac97acee477e3aeac2",
+    "chemprop/nn/message_passing/base.py": "57b911ae87af933d51d1dd22bb3a52ecc40e68e13bc59c30ccbcd7db3d4bce1c",
+    "chemprop/nn/predictors.py": "a593b93032fee4cd09894c878c3da3b22aca0d64344a59c84ab0ca3dff863b94",
+    "chemprop/models/model.py": "d891bed01ae1f8492ae99e4d3fbfd2d11e3827e9ad158cf4f042ed5837e12c1b",
+    "chemprop/data/collate.py": "45434241a67b93b352b757bab12698135e15faa732ca64824fa159f33238aa3c"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "level": "R2",
+  "device": "CPU",
+  "seeds": [
+    {
+      "seed": 1,
+      "rows": 1997,
+      "feature_matrix_sha256": "f6c6f1ea063f0baaa8271506e112723a99981cf449f57fc4e7dde594da2df1f8",
+      "max_absolute_prediction_difference": 0.0,
+      "max_relative_prediction_difference": 0.0,
+      "metrics": {
+        "MAE": 0.7764657358944539,
+        "RMSE": 1.0659710771165287,
+        "R2": 0.7841959769482807,
+        "Spearman": 0.8724383993658893
+      }
+    },
+    {
+      "seed": 2,
+      "rows": 1997,
+      "feature_matrix_sha256": "d00de7b64b74a12adb17d08acad26039c99782108ea6103b963072dee71f0823",
+      "max_absolute_prediction_difference": 0.0,
+      "max_relative_prediction_difference": 0.0,
+      "metrics": {
+        "MAE": 0.7485010950945417,
+        "RMSE": 1.0328774492379678,
+        "R2": 0.7973874765941018,
+        "Spearman": 0.8771999927947954
+      }
+    },
+    {
+      "seed": 3,
+      "rows": 1997,
+      "feature_matrix_sha256": "09ff3502b133dee79a6bae92ce9181f7c2f7b051794dbfb317f1cfd955a79262",
+      "max_absolute_prediction_difference": 0.0,
+      "max_relative_prediction_difference": 0.0,
+      "metrics": {
+        "MAE": 0.7494029446521521,
+        "RMSE": 1.0312667276162364,
+        "R2": 0.7980189124092238,
+        "Spearman": 0.8785749146775171
+      }
+    },
+    {
+      "seed": 4,
+      "rows": 1997,
+      "feature_matrix_sha256": "16e976c7b55de3eb9ebc4e8ba497a222e757cdf75bdbf046ce5101fa78466764",
+      "max_absolute_prediction_difference": 0.0,
+      "max_relative_prediction_difference": 0.0,
+      "metrics": {
+        "MAE": 0.7351755760293464,
+        "RMSE": 1.0269955316501018,
+        "R2": 0.799688537269865,
+        "Spearman": 0.8781164863393286
+      }
+    },
+    {
+      "seed": 5,
+      "rows": 1997,
+      "feature_matrix_sha256": "c865be053142be1fd4d4277b5c7d34144d0a83e0e9d470f8791de63ee3e685f0",
+      "max_absolute_prediction_difference": 0.0,
+      "max_relative_prediction_difference": 0.0,
+      "metrics": {
+        "MAE": 0.7386111070376918,
+        "RMSE": 1.0459450216852917,
+        "R2": 0.7922282926373406,
+        "Spearman": 0.8706808638415457
+      }
+    }
+  ],
+  "contract": "chemrxiv_submission/reproducibility/contract.json",
+  "input_manifest": "chemrxiv_submission/reproducibility/inputs/manifest.json"
+}

@@ -1,0 +1,12 @@
+# Recorded direct core dependencies; Python 3.11.16.
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.9.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+catboost==1.2.10
+rdkit==2023.9.6
+PyTDC==1.1.15
+matplotlib==3.10.9
+Pillow==12.3.0

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "frozen_before_replay": true,
+  "seeds": [1, 2, 3, 4, 5],
+  "R1": {"metric_absolute_tolerance": 1e-12, "metric_relative_tolerance": 1e-12, "row_identity": "exact"},
+  "R2": {"prediction_max_absolute_difference": 1e-6, "prediction_max_relative_difference_above_1e-8": 1e-6, "metric_absolute_tolerance": 1e-6, "row_identity": "exact", "feature_matrix_sha256": "exact"},
+  "R3": {"mae_per_seed_max_absolute_difference": 0.03, "mae_mean_max_absolute_difference": 0.02, "row_identity": "exact", "settings": "exact except output directory", "new_models": 5},
+  "original_training_device": "GPU:0",
+  "validation_device": "CPU for saved-metric and frozen-model replay; GPU:0 required for rebuild",
+  "cpu_threads": 1,
+  "gpu_devices": "0",
+  "largest_dense_train_feature_matrix_mib": 120.2,
+  "estimated_peak_memory_gb": null,
+  "original_five_fit_seconds_from_manifests": [6.103559515962843, 7.73837028600974, 17.774216996040195, 15.268958439002745, 15.573949406039901],
+  "original_fit_device": "NVIDIA GeForce RTX 3060; peak VRAM was not recorded; host runtime may differ",
+  "cache_and_outputs": "inside package",
+  "test_smiles_replay_scope": "reproduction of fixed held-out data, not an independent external generalization study"
+}
