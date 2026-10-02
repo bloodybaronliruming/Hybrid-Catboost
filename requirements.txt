@@ -10,3 +10,6 @@ rdkit==2023.9.6
 PyTDC==1.1.15
 matplotlib==3.10.9
 Pillow==12.3.0
+
+# PyTDC 1.1.15 imports pkg_resources; retain the recorded compatible runtime.
+setuptools==78.1.0

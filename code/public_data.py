@@ -23,6 +23,8 @@ def download(cache=None):
     raw = DATA / 'raw'
     require(not (raw / 'manifest.json').exists(), 'Acquisition already exists; preserve it')
     destination = raw / 'tdc_cache'
+    # PyTDC creates only one directory level; a fresh checkout has no data parents.
+    destination.mkdir(parents=True, exist_ok=True)
     if cache is not None:
         cache = Path(cache).resolve()
         # Offline mode copies only the endpoint's two official files, not the group archive.

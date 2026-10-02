@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "status": "PASS_ISOLATED_PRIMARY_SMOKE",
+  "verified_date": "2026-10-02",
+  "platform": "Linux x86_64",
+  "fresh_environment_install_verified": true,
+  "core_dependency_check": "PASS",
+  "scientific_protocol_tests": 9,
+  "fresh_cache_regression_test": "PASS",
+  "raw_train_val_feature_rebuild_verified": true,
+  "raw_test_feature_rebuild_verified": false,
+  "train_val_rows": 7985,
+  "official_five_seed_splits_verified": true,
+  "new_train_only_processors": 5,
+  "frozen_primary_training_views": [
+    {
+      "seed": 1,
+      "rows": 6986,
+      "columns": 2255,
+      "matrix_sha256": "27191a49059d8391e177994a7a001728598cae4cf49e56acece6b609dbd5934c"
+    },
+    {
+      "seed": 2,
+      "rows": 6986,
+      "columns": 2255,
+      "matrix_sha256": "7d4b13848bb8beb5d08d445984b9d7022bb3322be050b19c90ed1a8e80b3528d"
+    },
+    {
+      "seed": 3,
+      "rows": 6986,
+      "columns": 2254,
+      "matrix_sha256": "e2b6eae60f89db636c11c1100b3ab998881d9534b3c0daf34b293e782c845404"
+    },
+    {
+      "seed": 4,
+      "rows": 6986,
+      "columns": 2255,
+      "matrix_sha256": "329a1d62bb1ae5d95b3e99ccb895585e4cc7898fb65f2f338a1e2231b78e990f"
+    },
+    {
+      "seed": 5,
+      "rows": 5045,
+      "columns": 2255,
+      "matrix_sha256": "2f35213d1426df969aa97f13e1c43da58397506407e37c22d7c9345894fadb87"
+    }
+  ],
+  "smoke_fits": 1,
+  "smoke_rows": 32,
+  "smoke_trees": 2,
+  "formal_final_fits": 0,
+  "test_predictions": 0,
+  "test_scoring": false,
+  "full_public_GPU_rebuild_verified": false,
+  "tested_source_sha256": {
+    "code/public_common.py": "c093e5df46c571a8ecc9368b5c5d8a10075cd986fec63e44fe440c151d20e3fe",
+    "code/public_data.py": "50be7596713d9b258e48c2eee7842e28f0fdd91b0b376b0adf7dafc31dc453c4",
+    "code/public_diagnostics.py": "6cce5d69b112f2a0682b5c75baaf0639563e9db6a7d1b6e19e5c2a094503f875",
+    "code/public_graph.py": "0f65c8efedf1ed5ece2d203af34dce340d5c978e51a50799209d1b61d5f76f1d",
+    "code/public_models.py": "d342133dc3f0bb058aa2b391183a2ee0febf5a8ec59e93ae83d11de954dac738",
+    "code/public_pipeline_figure.py": "d8fe124f46b961683a49d61aab8f1da4f9fe5c8a65227282fa02365bb5e7ddc3",
+    "code/public_plot.py": "cb734a3b10636d55394744aaccf8a95e46f765fab6ba9614f4c2ebce924b4643",
+    "code/public_reports.py": "5bf7166133510e9bf07969c0c4aaff8af44987f111906a240eaa28f484e79078",
+    "code/reproduce.py": "7e8dbc2da63c5870058c71d9b52b67693746e64f181fac278c303546b69e4961",
+    "code/c05_reproduction.py": "cf6ea849390e4fc59435318abcf1340a1cccb9d871ee4b425430094b24c50f38",
+    "manifests/c03/feature_schema.json": "af6a49831784807362ca68eb67b966f99f98cb05d959e7180e07a5bea262c4c5",
+    "configs/environment_record.json": "eebbcff002a9f7269911e4ceaace8880d04edef6213231a674385c4462e90a90",
+    "configs/graph_api.json": "78e8959c20060d5de582cfb910a35e447827a9c41d10de076e4d0415fc2edf2e",
+    "configs/graph_schema.json": "337c2db0212193f665dd66a52520e3d0bf6bbe510f5cf4037946b082ef1eb42f",
+    "configs/numerical_runtime.json": "07b241022a3695c72a672f6700f089769f85f0e928d732b3ba4cf6b1a2b81fda",
+    "configs/recipe.json": "967b9b38710846dde57ee04fb98c0d1d18a3fa931b9bbab0015caed9e0fc75e8"
+  },
+  "environment": {
+    "python": "3.11.16",
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "scipy": "1.17.1",
+      "scikit-learn": "1.9.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0",
+      "catboost": "1.2.10",
+      "rdkit": "2023.9.6",
+      "PyTDC": "1.1.15"
+    }
+  },
+  "limitations": "Uses pinned original conda-forge builds and 20-thread BLAS for descriptor calculation; no complete five-model result reconstruction or external validation"
+}

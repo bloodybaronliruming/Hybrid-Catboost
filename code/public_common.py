@@ -90,6 +90,15 @@ def check_environment(graph=False):
     require(actual['python'] == expected['python'], 'Python version differs from recorded environment')
     for name, version in actual['packages'].items():
         require(version == expected['packages'][name], 'Recorded dependency differs: ' + name)
+    numerical_profile = read(ROOT / 'configs/numerical_runtime.json')
+    conda_records = {}
+    for path in (Path(sys.prefix) / 'conda-meta').glob('*.json'):
+        record = read(path)
+        conda_records[record['name']] = record
+    for name, recorded in numerical_profile['conda_packages'].items():
+        installed = conda_records.get(name, {})
+        require(all(installed.get(key) == recorded[key] for key in ('version', 'build')),
+                'Numerical conda build differs: ' + name + '; use environment.yml')
     if graph:
         distribution = metadata.distribution('chemprop')
         for relative, digest in read(ROOT / 'configs/graph_api.json')['installed_source_sha256'].items():

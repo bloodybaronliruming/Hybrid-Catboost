@@ -6,6 +6,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 import numpy as np
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'code'))
 import public_common as c
@@ -14,6 +15,47 @@ from public_models import validation_jobs
 
 
 class PublicProtocol(unittest.TestCase):
+    def test_fresh_download_creates_nested_cache(self):
+        import pandas as pd
+        import public_data as d
+
+        payload = {'train_val': 'Drug_ID,Drug,Y\n1,CCO,-1.0\n',
+                   'test': 'Drug_ID,Drug,Y\n2,CC,-2.0\n'}
+        with tempfile.TemporaryDirectory() as directory:
+            data = Path(directory) / 'fresh/data/solubility_trackA'
+            fixture = Path(directory) / 'provider'
+            fixture.mkdir()
+            expected = {}
+            for part, contents in payload.items():
+                path = fixture / f'{part}.csv'
+                path.write_text(contents)
+                expected[part] = dict(sha256=c.sha(path), rows=1, columns=['Drug_ID','Drug','Y'])
+            settings = dict(expected_raw=expected, dataset='solubility_aqsoldb',
+                            requested_name='Solubility_AqSolDB', source_url='synthetic-test-provider')
+
+            def provider(path):
+                # Assert the caller creates nested parents before invoking the official loader.
+                self.assertTrue(Path(path).is_dir())
+                target = Path(path) / 'admet_group/solubility_aqsoldb'
+                target.mkdir(parents=True)
+                for part, contents in payload.items():
+                    (target / f'{part}.csv').write_text(contents)
+                class Group:
+                    def get(self, requested):
+                        if requested != settings['requested_name']:
+                            raise ValueError('Unexpected fixture benchmark')
+                        return dict(name=settings['dataset'], **{part: pd.read_csv(target / f'{part}.csv') for part in payload})
+                return Group()
+
+            with patch.object(c, 'ROOT', Path(directory) / 'fresh'), \
+                 patch.object(d, 'DATA', data), patch.object(d, 'recipe', return_value=settings), \
+                 patch.object(d, 'check_environment'), patch.object(d, 'check_tdc_source'), \
+                 patch('tdc.benchmark_group.admet_group', side_effect=provider):
+                d.download()
+            self.assertTrue((data / 'raw/manifest.json').is_file())
+            for part in payload:
+                self.assertEqual(c.sha(data / f'raw/{part}.csv'), expected[part]['sha256'])
+
     def test_training_only_imputation_and_filtering(self):
         train = np.array([[1,np.nan,7,np.nan],[3,2,7,np.nan],[np.nan,4,7,np.nan]],dtype=float)
         processor, available, selected = c.fit_processor(train)

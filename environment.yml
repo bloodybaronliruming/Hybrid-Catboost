@@ -1,8 +1,28 @@
+# Linux x86_64: preserve the original conda-forge numerical builds.
 name: hybrid-catboost
 channels:
   - conda-forge
 dependencies:
-  - python=3.11.16
-  - pip
+  - python=3.11.16=h5f976f7_2_cpython
+  - pip=26.2.1=pyh8b19718_0
+  - numpy=1.26.4=py311h64a7726_0
+  - pandas=2.3.3=py311hed34c8f_2
+  - scipy=1.17.1=py311hbe70eeb_1
+  - scikit-learn=1.9.1=np2py311h1e9b377_1
+  - rdkit=2023.09.6=py311h4c2f14b_0
+  - joblib=1.6.0=pyhcf101f3_0
+  - threadpoolctl=3.7.0=pyhc455866_0
+  - catboost=1.2.10=cuda129_py311hc2fc611_100
+  - matplotlib-base=3.10.9=py311h0f3be63_0
+  - pillow=12.3.0=py311hf303fd3_4
+  - libopenblas=0.3.34=pthreads_hf13c14d_2
+  - libblas=3.11.0=11_h4a7cf45_openblas
+  - libcblas=3.11.0=11_h0358290_openblas
+  - liblapack=3.11.0=11_h47877c9_openblas
+  - libboost=1.82.0=h6fcfa73_6
+  - libboost-python=1.82.0=py311h92ebd52_6
+  - libgcc=16.2.0=ha9f2e26_5
+  - libstdcxx=16.2.0=h934c35e_5
+  - libgfortran5=16.2.0=h6b99dfc_5
   - pip:
       - -r requirements.txt

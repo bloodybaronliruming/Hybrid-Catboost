@@ -16,7 +16,9 @@
     "matplotlib": "3.10.9",
     "Pillow": "12.3.0"
   },
-  "install_validation": "NOT_YET_TESTED_IN_A_FRESH_ENVIRONMENT",
+  "install_validation": "PASS_CORE_FRESH_BUILD_MATCHED_LINUX_ENVIRONMENT_AND_PRIMARY_SMOKE_20261002",
   "original_gpu": "NVIDIA GeForce RTX 3060",
-  "peak_vram_recorded": false
+  "peak_vram_recorded": false,
+  "full_paper_extra_install_validation": "NOT_YET_TESTED_IN_A_FRESH_ENVIRONMENT",
+  "numerical_build_profile": "configs/numerical_runtime.json"
 }

@@ -265,8 +265,6 @@ def render(folder) -> None:
 
     manifest = {"status": "RENDERED_PENDING_VISUAL_REVIEW", "generator": "code/public_plot.py",
                 "generator_sha256": digest(Path(__file__)),
-                "figure_standard": "docs/FIGURE_STANDARD.md",
-                "figure_standard_sha256": digest(ROOT / "docs/FIGURE_STANDARD.md"),
                 "analysis_style_reference": "code/public_plot.py",
                 "analysis_style_sha256": digest(Path(__file__)),
                 "python_version": platform.python_version(),

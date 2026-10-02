@@ -1,11 +1,15 @@
 """Public, staged raw-data-to-result reproduction of the frozen solubility study."""
 import os
-os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
-for variable in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS'):
-    os.environ[variable] = '1'
-import argparse
-from pathlib import Path
+import sys
 import json
+from pathlib import Path
+os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG', ':4096:8')
+runtime = json.loads((Path(__file__).resolve().parents[1] / 'configs/numerical_runtime.json').read_text())
+feature_stage = len(sys.argv) > 1 and sys.argv[1] in ('features', 'predict-smiles')
+thread_count = runtime['feature_blas_threads'] if feature_stage else runtime['training_blas_threads']
+for variable in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS'):
+    os.environ[variable] = str(thread_count)
+import argparse
 from public_common import (ROOT, SEEDS, require, recipe, safe_run, read, dump,
     check_environment, development_guard, split_frame, view, matrix_sha, write_csv)
 

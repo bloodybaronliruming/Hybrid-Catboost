@@ -1,0 +1,93 @@
+{
+  "scope": "Linux x86_64 build-matched reconstruction; reference packages retained in original environment",
+  "feature_blas_threads": 20,
+  "training_blas_threads": 1,
+  "evidence": "Seven-row training-only witness: original conda environment/default 20-thread BLAS matches original raw features; pip wheels and single-thread Ipc do not",
+  "conda_packages": {
+    "python": {
+      "version": "3.11.16",
+      "build": "h5f976f7_2_cpython"
+    },
+    "pip": {
+      "version": "26.2.1",
+      "build": "pyh8b19718_0"
+    },
+    "numpy": {
+      "version": "1.26.4",
+      "build": "py311h64a7726_0"
+    },
+    "pandas": {
+      "version": "2.3.3",
+      "build": "py311hed34c8f_2"
+    },
+    "scipy": {
+      "version": "1.17.1",
+      "build": "py311hbe70eeb_1"
+    },
+    "scikit-learn": {
+      "version": "1.9.1",
+      "build": "np2py311h1e9b377_1"
+    },
+    "rdkit": {
+      "version": "2023.09.6",
+      "build": "py311h4c2f14b_0"
+    },
+    "joblib": {
+      "version": "1.6.0",
+      "build": "pyhcf101f3_0"
+    },
+    "threadpoolctl": {
+      "version": "3.7.0",
+      "build": "pyhc455866_0"
+    },
+    "catboost": {
+      "version": "1.2.10",
+      "build": "cuda129_py311hc2fc611_100"
+    },
+    "matplotlib-base": {
+      "version": "3.10.9",
+      "build": "py311h0f3be63_0"
+    },
+    "pillow": {
+      "version": "12.3.0",
+      "build": "py311hf303fd3_4"
+    },
+    "libopenblas": {
+      "version": "0.3.34",
+      "build": "pthreads_hf13c14d_2"
+    },
+    "libblas": {
+      "version": "3.11.0",
+      "build": "11_h4a7cf45_openblas"
+    },
+    "libcblas": {
+      "version": "3.11.0",
+      "build": "11_h0358290_openblas"
+    },
+    "liblapack": {
+      "version": "3.11.0",
+      "build": "11_h47877c9_openblas"
+    },
+    "libboost": {
+      "version": "1.82.0",
+      "build": "h6fcfa73_6"
+    },
+    "libboost-python": {
+      "version": "1.82.0",
+      "build": "py311h92ebd52_6"
+    },
+    "libgcc": {
+      "version": "16.2.0",
+      "build": "ha9f2e26_5"
+    },
+    "libstdcxx": {
+      "version": "16.2.0",
+      "build": "h934c35e_5"
+    },
+    "libgfortran5": {
+      "version": "16.2.0",
+      "build": "h6b99dfc_5"
+    }
+  },
+  "numerical_policy": "Keep original raw feature and primary training matrix hashes; no relaxation, rounding, clipping or substitution of historical features"
+}
