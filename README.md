@@ -9,17 +9,12 @@ splits, raw SMILES feature calculation, train-only preprocessing, validation
 candidate selection, fresh model fitting, blind prediction, independent
 evaluation and manuscript tables/figures. It covers the five Hybrid-CatBoost
 reference fits and all ten comparison groups. The complete search has 465
-validation fits, followed by 50 selected final fits. See
-[REPRODUCING.md](REPRODUCING.md) for installation, ordered commands, resumability,
-expected results, acceptance limits and GPU execution.
+validation fits, followed by 50 selected final fits.
 
 ## Public repository and fixed version
 
 The public repository is
 [Hybrid-Catboost](https://github.com/bloodybaronliruming/Hybrid-Catboost).
-The initial source version is
-[v1.0.0](https://github.com/bloodybaronliruming/Hybrid-Catboost/tree/v1.0.0),
-corresponding to commit `96c7459fe633116ea9e2083bd29429e547b6d651`.
 Public access, the tag and the MIT license were verified on October 1, 2026.
 The tag identifies the initial source snapshot; subsequent documentation updates
 on `main` do not change that snapshot. The historical preparation-status wording
@@ -39,7 +34,6 @@ that the complete reconstruction workflow has been verified.
 - `code/c05_*.py` and `chemrxiv_submission/reproducibility/`: historical
   replay implementation and metadata. These legacy commands require excluded
   assets; use `reproduce.py` for the new reconstruction route.
-- `docs/`: figure standard and source/redistribution notices; `CITATION.cff`.
 
 Raw data, labels, per-molecule predictions, feature matrices, original/refitted
 weights, fitted processor objects/statistics and private records are not bundled.
