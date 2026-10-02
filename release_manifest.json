@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "package": "Hybrid-CatBoost source-only raw-to-result reproduction package",
-  "public_repository_verified": false,
+  "public_repository_verified": true,
   "license_status": "MIT",
   "full_replay_inputs_included": false,
   "excluded_assets": "Raw data, labels, feature matrices, split memberships, per-row predictions, weights and fitted processors/state. No approved download location.",
@@ -9,7 +9,8 @@
     "code/c05_reproduction.py": {
       "source": "code/c05_reproduction.py",
       "source_sha256": "f4fc9f8448261c7b3a4868deb2797e1901bf17d6a0d96f74dd180155d23ee4b3",
-      "byte_identical": true
+      "byte_identical": false,
+      "adaptation": "Public documentation and provenance wording revised; numerical results and scientific calculations preserved."
     },
     "code/c05_saved_metrics.py": {
       "source": "code/c05_saved_metrics.py",
@@ -39,7 +40,8 @@
     "chemrxiv_submission/reproducibility/inputs/manifest.json": {
       "source": "chemrxiv_submission/reproducibility/inputs/manifest.json",
       "source_sha256": "b41ee008865e228c1ad6b2087e145379835d7be0fd59c155b09d12019d373811",
-      "byte_identical": true
+      "byte_identical": false,
+      "adaptation": "Public documentation and provenance wording revised; numerical results and scientific calculations preserved."
     },
     "chemrxiv_submission/reproducibility/inputs/jobs/seed_1.json": {
       "source": "chemrxiv_submission/reproducibility/inputs/jobs/seed_1.json",
@@ -69,7 +71,8 @@
     "results/manuscript_metrics_lock.json": {
       "source": "results/manuscript_metrics_lock.json",
       "source_sha256": "5dcd42bd624a8f6feba48ec369e696e553e67ec149bdf1491824c7a185c9f80d",
-      "byte_identical": true
+      "byte_identical": false,
+      "adaptation": "Public documentation and provenance wording revised; numerical results and scientific calculations preserved."
     },
     "evidence/R1_historical_report.json": {
       "source": "chemrxiv_submission/reproducibility/runs/r1_saved_metrics_20260930T005816988468Z/report.json",
@@ -89,7 +92,8 @@
     "evidence/R3_historical_independent_audit.json": {
       "source": "chemrxiv_submission/reproducibility/runs/r3_full_20260930T010512458871Z/independent_audit.json",
       "source_sha256": "3ab6ea87ea35589767c1cf39cd433dc26a8c6f752cf93f4b4460691353c2cac4",
-      "byte_identical": true
+      "byte_identical": false,
+      "adaptation": "Public documentation and provenance wording revised; numerical results and scientific calculations preserved."
     },
     "manifests/c03/feature_schema.json": {
       "source": "manifests/c03/feature_schema.json",
@@ -106,14 +110,15 @@
       "source": "code/c07_build_publication_artifacts.py",
       "source_sha256": "415901646755d29b0b284291fd427914b70c0df7f832132be5909744442ae71b",
       "byte_identical": false,
-      "changes": "Package-local generated-run inputs replace parent scientific-tree dependencies; approved schematic geometry is generated from source."
+      "changes": "Package-local generated-run inputs replace parent scientific-tree dependencies; approved schematic geometry is generated from source.",
+      "adaptation": "Public documentation and provenance wording revised; numerical results and scientific calculations preserved."
     }
   },
   "files_sha256": {
     ".gitignore": "74bdbd411e85616e0bab8f00efc83941d22ac046339819a1bb42dd84eb90ddb7",
     "CITATION.cff": "7313003f092703b32a6a150652ec84fa482ee5a80dcf5710af07ae2c83723042",
     "LICENSE": "849b72e6fbedee2ad7946cf4cdd7d0a6f0f7f8369de2f9ea2c97644728687ab0",
-    "README.md": "ab6c131b1b665044d7a80a7f2caf143b1c5daa387aad41431d11424c83a5034f",
+    "README.md": "856762b77430e1890b589fcd3ab5903d9f308f0d0617cb0e1d28034350edaaeb",
     "REPRODUCING.md": "3690689630be5088bc55f9c0851e10c1f21dac4281aaa068432ec0fc3081ef10",
     "chemrxiv_submission/reproducibility/contract.json": "f043bc8ea096a2644ca35b958d362871eb253fecb7823f556a239019cf869f95",
     "chemrxiv_submission/reproducibility/inputs/jobs/seed_1.json": "9f65044d803386d6692f1092d773dd37465b1258867e9902cfd37ed7b1092328",
@@ -121,10 +126,10 @@
     "chemrxiv_submission/reproducibility/inputs/jobs/seed_3.json": "6687bc15d434234767f3ce1642c0cd08103f400ef2a3390c673ffd16a50484b9",
     "chemrxiv_submission/reproducibility/inputs/jobs/seed_4.json": "dc8bba67b6e3acac41f003584302b8399cc15a7b9c328532b9403a1ee4d1ae9f",
     "chemrxiv_submission/reproducibility/inputs/jobs/seed_5.json": "b5160b292c3e438ab3d3772c94c252b7131e88192f93626120d8ee2a282c8a37",
-    "chemrxiv_submission/reproducibility/inputs/manifest.json": "b41ee008865e228c1ad6b2087e145379835d7be0fd59c155b09d12019d373811",
+    "chemrxiv_submission/reproducibility/inputs/manifest.json": "278ce72efa7b955f0084ce0037f4d75a27aa73181040637bed0647d8b5d94675",
     "code/c05_frozen_inference.py": "582d8ee6e78f4acc887d6faa42cecde6c97677a68f2790be5acd77c6a7b6b7f5",
     "code/c05_predict_smiles.py": "d760381d93ef94421af52087dbf99338b2a9d8a51d0b67ef7fe12f97dc471c4b",
-    "code/c05_reproduction.py": "f4fc9f8448261c7b3a4868deb2797e1901bf17d6a0d96f74dd180155d23ee4b3",
+    "code/c05_reproduction.py": "cf6ea849390e4fc59435318abcf1340a1cccb9d871ee4b425430094b24c50f38",
     "code/c05_saved_metrics.py": "419d023d8add4edd9e9a9addf0a55747546e231be4f9a778cfe79622f4cf1e76",
     "code/c05_training_rebuild.py": "40e5a9e4a572d04e24f26fc7174cc2420ad24121e548545a6580d8794e448d6f",
     "code/export_raw_features.py": "ae25a747a58533280fd3c8544a3591ea7b42d251c00d594e320dadc7730ffe80",
@@ -134,7 +139,7 @@
     "code/public_graph.py": "0f65c8efedf1ed5ece2d203af34dce340d5c978e51a50799209d1b61d5f76f1d",
     "code/public_models.py": "d342133dc3f0bb058aa2b391183a2ee0febf5a8ec59e93ae83d11de954dac738",
     "code/public_pipeline_figure.py": "d8fe124f46b961683a49d61aab8f1da4f9fe5c8a65227282fa02365bb5e7ddc3",
-    "code/public_plot.py": "49d5c92d07eabc53d79000c01f4a7ec194af76a76439a80ea41305f2bbba87de",
+    "code/public_plot.py": "cb734a3b10636d55394744aaccf8a95e46f765fab6ba9614f4c2ebce924b4643",
     "code/public_reports.py": "5bf7166133510e9bf07969c0c4aaff8af44987f111906a240eaa28f484e79078",
     "code/reproduce.py": "f104b668ef283361242f8406b17ab9fd676c3971c2fee780f3943aef2f048de1",
     "code/run_paper.sh": "06e7f91ae94c5ad3a02c254dbb88bd080d3a7b5f702500778e668c93548a111b",
@@ -145,29 +150,32 @@
     "configs/graph_schema.json": "337c2db0212193f665dd66a52520e3d0bf6bbe510f5cf4037946b082ef1eb42f",
     "configs/recipe.json": "967b9b38710846dde57ee04fb98c0d1d18a3fa931b9bbab0015caed9e0fc75e8",
     "docs/FIGURE_CAPTIONS.md": "525717d4d42ba55739ff6530171b1d6b33e3345246cf3069221c72d422196880",
-    "docs/FIGURE_STANDARD.md": "7e1a9e25f84f8f62decfd3b9a95f6f75ff90251ce8288fe18192e286dfb5d81f",
+    "docs/FIGURE_STANDARD.md": "256adad9631df6169bab3e5aa168ed953dbf6ae7bff346a919b7e252066ff8de",
     "docs/THIRD_PARTY_NOTICES.md": "f7765ec1fda89c84dd4bb2c4dbfc8cf742e28fb63ea8a8b2556e032541c2f591",
     "environment.lock.txt": "74ccbc312b12153f99da7b3afb95e1f441c87a818424b520abe5ff731eb23c48",
     "environment.yml": "44f9a678b7b404afd01bda2ae34a3096b2c18dbb5ec508cf974279cea88aadfd",
     "evidence/R1_historical_report.json": "55f9694c7a65a20d33b6f4cc2839cce7f509e2f156c7da3487bdfb0da19ef12b",
     "evidence/R2_historical_report.json": "484f56409975519302a70389a27744e51b6bdd960c35b196913526db866dfef9",
-    "evidence/R3_historical_independent_audit.json": "3ab6ea87ea35589767c1cf39cd433dc26a8c6f752cf93f4b4460691353c2cac4",
+    "evidence/R3_historical_independent_audit.json": "426569095a1d74fea3686e514ec69966a9300d80a463c87a006bad159cb2e9d5",
     "evidence/R3_historical_report.json": "3ceec8883c0e4b60fd70f4a52b029f752242c199614e60861bcbe3da3030e92b",
     "evidence/historical_validation_runs.csv": "6dbbaa8cdc244b57fb0c3ba02f9a269b65008e3e9a2362503502043b6552a9f2",
     "evidence/historical_validation_summary.csv": "a6b3011316a183f6a24abb078b837b72dcc994e52f83441a37295fa6a3f13824",
     "evidence/public_preparation_checks.json": "e579a44f785b676d886dcbfb09a7b8b804e2154e43d6299af2d0142ee0161fc3",
-    "evidence/public_source_derivation.json": "c6bc01c56cceab820a0d91cb05df40813a04014b8aa6d50d9eea5348eb624dcc",
+    "evidence/public_source_derivation.json": "9f3e43ec09521ac1d3d43b83b1e77bac25ae98a751798211c572c387a5756f2a",
     "examples/smiles.csv": "838d1d98a25cf393996eba2450da754de29bb3dbc79b5f46edcf70315ce46a47",
     "manifests/c03/feature_schema.json": "af6a49831784807362ca68eb67b966f99f98cb05d959e7180e07a5bea262c4c5",
     "requirements-paper.txt": "8fb99b7e01214e05cee1442680a0c45d03f3f5a94996c2337831b7e31cccac22",
     "requirements.txt": "eed76528618255217bc69960b8749e13bfa062803ce21dfe8a6ffc8a1006709e",
-    "results/manuscript_metrics_lock.json": "5dcd42bd624a8f6feba48ec369e696e553e67ec149bdf1491824c7a185c9f80d",
+    "results/manuscript_metrics_lock.json": "5554f6358fdd0351f0bea9ef723714ebd5dd8cd294737cdc00741181d76af11b",
     "tests/test_graph_protocol.py": "89691d3c5351cecf68454a303680ff92540c35ce9a9ca22b53b908eecb324e20",
     "tests/test_public_protocol.py": "283c44b0fc09101928fa0be1c16194cd683d2f7966974a4d1f14f9a72f95d515"
   },
   "public_raw_rebuild_code_included": true,
   "full_public_GPU_rebuild_verified": false,
-  "current_release_scope": "source code, frozen settings, dependency records, tests and reproduction instructions; full experimental reconstruction deferred by author",
-  "full_experiment_execution_is_required_for_current_task": false,
-  "preparation_checks": "evidence/public_preparation_checks.json"
+  "current_release_scope": "Source code, frozen settings, dependency records, tests and reproduction instructions; complete experimental reconstruction has not been executed for this public workflow.",
+  "preparation_checks": "evidence/public_preparation_checks.json",
+  "public_repository_url": "https://github.com/bloodybaronliruming/Hybrid-Catboost",
+  "public_repository_verification_date": "2026-10-01",
+  "initial_public_source_tag": "v1.0.0",
+  "initial_public_source_commit": "96c7459fe633116ea9e2083bd29429e547b6d651"
 }

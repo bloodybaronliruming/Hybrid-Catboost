@@ -882,8 +882,6 @@
       "Spearman_delta_sample_sd": 0.01368524450589088
     }
   ],
-  "plot_statistics_contract": "results/c04/plot_statistics_contract.json",
-  "leaderboard_context": "results/c04/leaderboard_context.json",
   "tolerance": {
     "absolute": 1e-12,
     "relative": 1e-12,
@@ -891,28 +889,15 @@
   },
   "new_model_or_prediction_changes": false,
   "new_ensemble_score": false,
-  "source_hashes": "results/c04/source_hashes.json",
-  "R1_C05_evidence_reusable": true,
-  "C05_stage_completed": false,
-  "author_scientific_review": "PENDING_LATER_STAGE",
-  "publication_ready": false,
   "locked_at_utc": "2026-09-29T15:35:39.945992+00:00",
   "verification": {
-    "primary_qa_path": "chemrxiv_submission/progress/runs/c04_metrics_20260929T152120403265Z/primary_002/numerical_qa.json",
     "primary_qa_sha256": "2b5f065c8d82ad5645bfd38cbb0d0b6589d249cbc0af3dee754810325709c0fe",
-    "independent_qa_path": "chemrxiv_submission/progress/runs/c04_metrics_20260929T152120403265Z/independent_001/independent_numerical_qa.json",
     "independent_qa_sha256": "4ad24c4dcfc30a30526be195f59b42241072833bd73f84fc4114d8b0a295648e",
     "primary_checks": 3492,
     "independent_checks": 2185,
     "primary_max_normalized_metric_difference": 8.881784197001252e-16,
     "independent_max_normalized_metric_difference": 2.220446049250313e-16,
-    "review_scope": "Independent mathematical implementation by same Codex agent; final human scientific review remains pending"
+    "review_scope": "AI-assisted numerical readback using a separate mathematical implementation within the same development process; not independent human scientific review."
   },
-  "validation_label_serialization": "results/c04/validation_label_serialization.json",
-  "numeric_lock_does_not_approve": [
-    "manuscript interpretation",
-    "public release",
-    "ChemRxiv submission",
-    "TDC submission"
-  ]
+  "record_scope": "Historical numerical reference; verification metadata describes the checks performed when these results were locked, not current manuscript or submission approval."
 }

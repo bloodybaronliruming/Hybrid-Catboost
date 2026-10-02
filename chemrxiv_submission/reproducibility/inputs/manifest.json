@@ -131,5 +131,5 @@
     "original_blind_views/seed_5.json": "solubility_trackA_v1/results/blind_predictions/b7_20260928T125328316961Z/jobs/S32_CATBOOST__seed5/attempt_20260928T130054164375Z/feature_view.json",
     "original_acceptance/seed_5.json": "solubility_trackA_v1/results/final_training/b7_20260928T110443571596Z/jobs/S32_CATBOOST__seed5/attempt_20260928T112133495832Z/acceptance.json"
   },
-  "release_status": "internal_reproduction_inputs; do not publish until data and weight permissions are checked"
+  "release_status": "Public metadata only; raw data, weights and fitted processors listed in this inventory are not distributed or approved for redistribution."
 }

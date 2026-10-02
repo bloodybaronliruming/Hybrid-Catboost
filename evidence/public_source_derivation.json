@@ -13,5 +13,5 @@
     "predict",
     "setup"
   ],
-  "notes": "Native numerical functions extracted; internal workspace gates and graph cache interfaces omitted. Package-local IO imports replaced; graph.loader replaced with loader in fixed-epoch fit."
+  "notes": "Native numerical functions extracted; study-specific orchestration and graph cache interfaces omitted. Package-local IO imports replaced; graph.loader replaced with loader in fixed-epoch fit."
 }

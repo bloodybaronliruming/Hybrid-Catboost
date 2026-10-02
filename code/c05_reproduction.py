@@ -13,8 +13,8 @@ PKG = Path(__file__).resolve().parents[1]
 INPUTS = PKG / "chemrxiv_submission/reproducibility/inputs"
 RESULTS = PKG / "chemrxiv_submission/reproducibility/runs"
 SEEDS = (1, 2, 3, 4, 5)
-ACCEPTED_INPUT_MANIFEST_SHA256 = "b41ee008865e228c1ad6b2087e145379835d7be0fd59c155b09d12019d373811"
-ACCEPTED_METRICS_LOCK_SHA256 = "5dcd42bd624a8f6feba48ec369e696e553e67ec149bdf1491824c7a185c9f80d"
+ACCEPTED_INPUT_MANIFEST_SHA256 = "278ce72efa7b955f0084ce0037f4d75a27aa73181040637bed0647d8b5d94675"
+ACCEPTED_METRICS_LOCK_SHA256 = "5554f6358fdd0351f0bea9ef723714ebd5dd8cd294737cdc00741181d76af11b"
 
 
 def require(condition, message):
@@ -36,7 +36,7 @@ def sha(path):
 
 def verified_inputs():
     require(sha(INPUTS / "manifest.json") == ACCEPTED_INPUT_MANIFEST_SHA256, "Input manifest provenance changed")
-    require(sha(PKG / "results/manuscript_metrics_lock.json") == ACCEPTED_METRICS_LOCK_SHA256, "C04 numerical lock changed")
+    require(sha(PKG / "results/manuscript_metrics_lock.json") == ACCEPTED_METRICS_LOCK_SHA256, "Numerical reference checksum changed")
     manifest = read_json(INPUTS / "manifest.json")
     require(manifest["schema_version"] == 1, "Unknown input manifest")
     for relative, expected in manifest["sha256"].items():

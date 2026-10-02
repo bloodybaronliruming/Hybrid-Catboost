@@ -1,4 +1,4 @@
-"""Build C07 manuscript tables and plots from frozen, verified study records."""
+"""Build manuscript tables and plots from frozen, verified study records."""
 
 from __future__ import annotations
 

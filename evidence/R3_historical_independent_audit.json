@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "scope": "Independent readback and mathematical calculation by the same Codex agent; no human scientific review",
+  "scope": "AI-assisted readback and separate mathematical calculation within the same development process; no independent human scientific review.",
   "seeds": [
     {
       "seed": 1,

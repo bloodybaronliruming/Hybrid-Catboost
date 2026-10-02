@@ -1,6 +1,6 @@
 # Hybrid-CatBoost: reproducible aqueous-solubility benchmark code
 
-Public-source preparation for the frozen `solubility_trackA_v1` study on TDC
+Public source code for the frozen `solubility_trackA_v1` study on TDC
 `Solubility_AqSolDB`. Author: Li Ruming, Beijing University of Chemical Technology;
 ORCID: https://orcid.org/0009-0004-0499-429X. Code license: [MIT](LICENSE).
 
@@ -11,7 +11,20 @@ evaluation and manuscript tables/figures. It covers the five Hybrid-CatBoost
 reference fits and all ten comparison groups. The complete search has 465
 validation fits, followed by 50 selected final fits. See
 [REPRODUCING.md](REPRODUCING.md) for installation, ordered commands, resumability,
-expected results, acceptance limits and GPU handoff.
+expected results, acceptance limits and GPU execution.
+
+## Public repository and fixed version
+
+The public repository is
+[Hybrid-Catboost](https://github.com/bloodybaronliruming/Hybrid-Catboost).
+The initial source version is
+[v1.0.0](https://github.com/bloodybaronliruming/Hybrid-Catboost/tree/v1.0.0),
+corresponding to commit `96c7459fe633116ea9e2083bd29429e547b6d651`.
+Public access, the tag and the MIT license were verified on October 1, 2026.
+The tag identifies the initial source snapshot; subsequent documentation updates
+on `main` do not change that snapshot. The historical preparation-status wording
+in that snapshot predates publication. Repository publication does not imply
+that the complete reconstruction workflow has been verified.
 
 ## What is included
 
@@ -23,7 +36,7 @@ expected results, acceptance limits and GPU handoff.
   versions and installation instructions; a fresh installation is still pending.
 - `evidence/` and `results/manuscript_metrics_lock.json`: historical numerical
   reference and earlier R1–R3 evidence, plus actual public-preparation checks.
-- `code/c05_*.py` and `chemrxiv_submission/reproducibility/`: unchanged historical
+- `code/c05_*.py` and `chemrxiv_submission/reproducibility/`: historical
   replay implementation and metadata. These legacy commands require excluded
   assets; use `reproduce.py` for the new reconstruction route.
 - `docs/`: figure standard and source/redistribution notices; `CITATION.cff`.
@@ -36,6 +49,10 @@ historical-weight download or access-on-request commitment is offered.
 
 ## Actual verification status
 
+Historical verification files summarize numerical checks; their metadata is
+not a current manuscript approval or submission status. Public-facing reference
+metadata has been simplified without changing numerical results.
+
 The original internal R1–R3 checks passed. R3 reused frozen features/processors;
 it did not independently reconstruct raw feature preparation. The new public
 pipeline has passed the checks recorded in
@@ -43,8 +60,7 @@ pipeline has passed the checks recorded in
 including isolated official acquisition/split checks and selected arithmetic
 checks. Full raw-feature recomputation, the full GPU reconstruction and fresh
 environment installation remain pending. Code being present is not a claim
-that those complete workflows have already passed. No public GitHub URL or
-fixed release has yet been created or verified.
+that those complete workflows have already passed.
 
 ## Method and interpretation
 
